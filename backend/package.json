@@ -1,0 +1,49 @@
+{
+  "name": "connect-ai-backend",
+  "version": "1.0.0",
+  "description": "Just learing how we can use AI model on out apps",
+  "homepage": "https://github.com/rammewada/connect-ai#readme",
+  "bugs": {
+    "url": "https://github.com/rammewada/connect-ai/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rammewada/connect-ai.git"
+  },
+  "license": "ISC",
+  "author": "Ram",
+  "type": "module",
+  "main": "server.js",
+  "imports": {
+    "#*": "./src/*"
+  },
+  "scripts": {
+    "dev": "tsx --watch server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tsconfig/node22": "^22.0.5",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.8.0",
+    "eslint": "^10.4.0",
+    "eslint-plugin-perfectionist": "^5.9.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.5",
+    "prettier": "^3.8.3",
+    "tsx": "^4.22.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.3"
+  }
+}
