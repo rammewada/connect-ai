@@ -30,7 +30,12 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "@google/genai": "^2.4.0",
+    "@tavily/core": "^0.7.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "openai": "^6.38.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
