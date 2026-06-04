@@ -23,6 +23,12 @@ export default tseslint.config(
   {
     rules: {
       "sort-keys": "off",
+      "sort-imports": "off",
+
+      "perfectionist/sort-classes": "off",
+      "perfectionist/sort-imports": "off",
+      "perfectionist/sort-objects": "off",
+      "no-ununsed-vars": "off",
     },
-  }
+  },
 );

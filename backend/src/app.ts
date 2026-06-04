@@ -2,19 +2,49 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import express, { Request, Response } from "express";
-import { tavily, TavilySearchResponse } from "@tavily/core";
+import { tavily } from "@tavily/core";
 
 import { ConversationRequest } from "#types/index.js";
 import { GoogleGenAI } from "@google/genai";
 import { PROPT_TEMPLATE, SYSTEM_PROMPT } from "#prompt.js";
-
+import { prisma } from "../db.js";
 const app = express();
 app.use(express.json());
+
+async function run() {
+  const res = await prisma.user.create({
+    data: {
+      name: "Ram",
+      email: "ram@gmail.com",
+      provider: "Github",
+    },
+  });
+  console.log(res);
+}
+await run();
+
 app.get("/health", (req: Request, res: Response) => {
   res.status(200).json({
     message: "Server is healthy and running",
     status: "ok",
   });
+});
+
+// All the past conversatiosn
+app.get("/conversations", (req: Request, res: Response) => {});
+
+// Get the specific conversation
+app.get("/conversations/:conversationId", (req: Request, res: Response) => {});
+
+// Perplexity ask
+app.post("ask", (req: Request, res: Response) => {});
+
+// Follow up questions
+app.post("ask", (req: Request, res: Response) => {
+  // STEP 1: Get the existing chat from the DB
+  //STEP 2: Forward it the the LLM for the context
+  //STEP 2.1: DO some context engineering
+  //STEP 3: Stream the response to the user
 });
 
 const ai = new GoogleGenAI({
