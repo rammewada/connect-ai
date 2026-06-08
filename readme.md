@@ -64,3 +64,19 @@ Connect AI is a simple full-stack web app combining a Next.js frontend with an E
 - The frontend is a Next.js app located in `frontend/app`
 - The backend server entrypoint is `backend/server.ts`
 - Update the frontend page and backend routes to implement your AI interactions
+
+#### Simple
+
+Search AI helps users find the right information faster. Instead of spending hours searching through Google results, it analyzes and filters data from multiple trusted sources, delivering highly relevant and accurate answers with cross-verified information.
+
+#### Product Description
+
+Search AI is an intelligent research assistant designed for users who struggle to find accurate information through traditional search engines. It gathers, analyzes, and cross-checks data from multiple reliable sources to provide precise, trustworthy, and well-validated answers, helping users make informed decisions with confidence.
+
+#### Pitch
+
+Search AI transforms online research by going beyond traditional search results. It intelligently filters noise, verifies information across multiple sources, and delivers highly accurate, evidence-backed answers—saving users time and improving the quality of their research.
+
+#### Landing Page Version
+
+Stop digging through endless search results. Search AI finds, filters, and verifies information from multiple sources to provide accurate, reliable, and research-backed answers in seconds. Focus on insights, not searching.
